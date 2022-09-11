@@ -1,0 +1,55 @@
+#%RAML 1.0
+title: AirIndiaFlightsAPI
+
+/AirIndiaAirliness:
+ get:
+   queryParameters:
+    source:
+      example: HYD
+    destination:
+      example: BAN
+    doj:
+     example: 31-JUL-2022
+   responses:
+     200:
+       body:
+         application/json:
+           example:
+             [
+             {
+                "ID": "201",
+                "airline": "AirIndia",
+                "flightCode": "AI201",
+                "fromAirportCode": "BAN",
+                "toAirportCode": "DEL",
+                "departureDate": "31-JUL-2022",
+                "emptySeats": "0",
+                "totalSeats": "200",
+                "price": "199",
+                "planeType": "AirIndia 737"
+    },
+    {
+                "ID": "202",
+                "airline": "AirIndia",
+                "flightCode": "AI202",
+                "fromAirportCode": "BAN",
+                "toAirportCode": "DEL",
+                "departureDate": "31-JUL-2022",
+                "emptySeats": "24",
+                "totalSeats": "350",
+                "price": "450",
+                "planeType": "AirIndia 747"
+    },
+    {
+                "ID": "203",
+                "airline": "AirIndia",
+                "flightCode": "AI203",
+                "fromAirportCode": "BAN",
+                "toAirportCode": "DEL",
+                "departureDate": "31-JUL-2022",
+                "emptySeats": "33",
+                "totalSeats": "400",
+                "price": "450",
+                "planeType": "AirIndia 757"
+    }           
+             ]  
